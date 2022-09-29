@@ -6,7 +6,7 @@
 
     margin-bottom: rem(155);
 
-    @include for-width(-tablet) {
+    @include for-width(-desktop-med) {
       margin-bottom: rem(75);
     }
 
