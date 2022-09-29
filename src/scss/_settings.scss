@@ -41,9 +41,7 @@
   line-height: 1.65;
   color: var(--color-white);
   background-color: var(--color-orange);
-  transition-property: color, background-color;
-  transition-duration: 0.3s;
-  transition-timing-function: linear;
+  transition: background-color 0.3s linear;
 
   &::before {
     content: "";

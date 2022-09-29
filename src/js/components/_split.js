@@ -22,7 +22,7 @@ Array.from(split.querySelectorAll('.letter')).forEach((el, idx) => {
     opacity: 0,
     scale: .1,
     x: random(-300, 300),
-    y: random(-300, 300),
+    y: random(-200, 200),
     z: random(-300, 300),
     delay: idx * 0.02,
     repeat: 0,
