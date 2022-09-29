@@ -1,8 +1,25 @@
 .stub {
+  padding-top: rem(35);
+
+  &__top {
+    @include flex-all-sb;
+
+    margin-bottom: rem(155);
+
+    @include for-width(-tablet) {
+      margin-bottom: rem(75);
+    }
+
+    @include for-width(-mobile-md) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
   &__title {
     @include h1;
 
-    margin-bottom: rem(47);
+    margin-bottom: rem(46);
 
     .word {
       display: inline-flex;

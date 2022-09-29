@@ -4,9 +4,9 @@ const text = document.querySelector('.stub__title');
 
 const splitText = (el) => {
   el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
-    return `<div class="word">` +
-      m.replace(/(-|#|@)?\S(-|#|@)?/g, "<div class='letter'>$&</div>") +
-      `</div>`;
+    return `<span class="word">` +
+      m.replace(/(-|#|@)?\S(-|#|@)?/g, "<span class='letter'>$&</span>") +
+      `</span>`;
   });
   return el;
 };
@@ -21,9 +21,9 @@ Array.from(split.querySelectorAll('.letter')).forEach((el, idx) => {
   TweenMax.from(el, 2.5, {
     opacity: 0,
     scale: .1,
-    x: random(-500, 500),
-    y: random(-500, 500),
-    z: random(-500, 500),
+    x: random(-300, 300),
+    y: random(-300, 300),
+    z: random(-300, 300),
     delay: idx * 0.02,
     repeat: 0,
   })

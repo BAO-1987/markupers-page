@@ -25,34 +25,8 @@
   max-width: var(--container-width);
 }
 
-section {
-  margin-bottom: rem(150);
-
-  @include for-width(-desktop-med) {
-    margin-bottom: rem(100);
-  }
-
-  @include for-width(-mobile-l) {
-    margin-bottom: rem(50);
-  }
-}
-
-.main {
-  padding-top: rem(60);
-
-  &--stub {
-    padding-top: rem(119);
-  }
-
-  @include for-width(-tablet) {
-    padding-top: rem(30);
-  }
-}
-
 .logo {
   @include flex-all-center;
-
-  flex-shrink: 0;
 }
 
 .btn {
@@ -90,7 +64,7 @@ section {
   }
 
   &:hover {
-   background-color: var(--color-active);
+    background-color: var(--color-active);
   }
 
   &:active {
@@ -122,7 +96,7 @@ section {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: var(--color-boulder);
+    background-color: var(--color-ebony);
     transition: background-color 0.3s linear;
 
     &::before {
@@ -134,7 +108,7 @@ section {
       mask-size: cover;
       width: 20px;
       height: 20px;
-      background-color: var(--color-ebony);
+      background-color: var(--color-boulder);
       transition: background-color 0.3s linear;
     }
 
@@ -182,8 +156,6 @@ section {
   @include adaptive_size("font-size", 18, 14);
 
   margin-bottom: 47px;
-  width: 100%;
-  max-width: 690px;
 }
 
 .visually-hidden {
