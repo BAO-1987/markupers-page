@@ -1,0 +1,39 @@
+/* stylelint-disable-next-line at-rule-blacklist */
+@mixin h1 {
+  @include adaptive_size("font-size", 150, 55);
+
+  margin-bottom: rem(100);
+  font-weight: 900;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+@mixin h2 {
+  @include adaptive_size("font-size", 75, 45);
+
+  margin-bottom: rem(50);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+@mixin h3 {
+  @include adaptive_size("font-size", 40, 20);
+
+  margin-bottom: rem(20);
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}

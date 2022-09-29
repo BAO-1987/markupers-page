@@ -1,0 +1,12 @@
+.stub {
+  &__title {
+    @include h1;
+
+    margin-bottom: rem(47);
+
+    .word {
+      display: inline-flex;
+    }
+
+  }
+}

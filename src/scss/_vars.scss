@@ -1,0 +1,21 @@
+:root {
+  // base
+  --font-family: "Raleway", sans-serif;
+  --content-width: 1410px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-black: #001322;
+  --color-ebony: #283642;
+  --color-orange: #f15a25;
+  --color-shadow: #907f53;
+  --color-white: #fff;
+  --color-silver: #bababa;
+  --color-boulder: #7c7c7c;
+
+  // radius
+  --br-r: 15px;
+  // --coins-elements-displayed: 9;
+  // --coins-element-width: 135px;
+}
